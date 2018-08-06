@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bucketlist</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'css/style.css')}}">
+	
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	
+    <!--Bootstrap CSS -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style>
+    body {
+        background-image: url("{{ url_for('static', filename='images/stadium.jpg') }}");
+    }
+    a{
+        color: #fff;
+    }
+</style>
+<body>
+    <div>
+<form action="home.html" method="post">
+        <img src="">
+        <b>Login Form</b>
+        <input type="email" name="" value="" placeholder="Email or Username" id="" />
+        <input type="password" name="" value="" placeholder="Password" id="" />
+        <input type="submit" name="" value="LOGIN" placeholder="" id="login" />
+        <a href="" >Forgot  Password ??</a>
+        <a href="signup.html" >Signup</a>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

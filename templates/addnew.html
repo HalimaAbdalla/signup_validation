@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Bucketlist</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/home.css') }}">
+	
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div id="container">
+		<header class="header dark-bg">
+                <div class="toggle-nav">
+                    <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
+                </div>
+                <!--logo start-->
+                <a href="{{ url_for('home.html') }}" class="logo">Bucket <span class="lite">list</span></a>
+                <!--logo end-->
+
+                <div class="nav search-row" id="top_menu">
+                    <!--  search form start -->
+                    <ul class="nav top-menu">
+                        <li>
+                            
+                        </li>
+                    </ul>
+                    <!--  search form end -->
+                </div>
+                   <div class="top-nav notification-row">
+                    <!-- notificatoin dropdown start-->
+                    <ul class="nav pull-right top-menu">
+                        <li class="dropdown">
+                            <a data-toggle="dropdown" class="" href="#">
+                                
+                                <span class="username"><b>Halima Abdallah Hassan</b></span>
+                                <b class="caret"></b>
+                            </a>
+                           
+                        </li>
+                        <!-- user login dropdown end -->
+                    </ul>
+                    <!-- notificatoin dropdown end-->
+                </div>
+		</header>
+		      <!--sidebar start-->
+        <aside>
+            <div id="sidebar"  class="nav-collapse">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu">
+                    <li class="">
+                        <a href="{{ url_for('home.html') }}">
+                            <i class="icon_house_alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="{{ url_for('addnew.html') }}">
+                            <i class="icon_id"></i>
+                            <span>Add New Bucketlist</span>
+                        </a>
+                    </li>
+                   
+
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+         <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                <div class="row">
+                    <div id="wrapper">
+
+      
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">
+                            Create a new Bucketlist >>>
+                        </h2>
+                        <h6 class="page-header">a list of things you want to do.</h6><hr>
+                        <form role="form" action="home.html" method="POST" enctype="multipart/form-data">
+  
+
+    <div class="form-group">
+        <label for="post_title">Bucketlist name</label>
+        <input type="text" name="title" class="form-control" placeholder="">
+    </div>
+
+    <div class="form-group">
+        <label for="post_tags">Expiry Date</label>
+        <input type="date" name="Expiry Date" class="form-control" placeholder="/">
+    </div>
+
+    <div class="form-group">
+        <label for="post_content">Write a short Description</label>
+        <textarea  class="form-control" name="description" id="" cols="12" rows="6">
+        </textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="post_image">Select File</label>
+        <input type="file" name="file"> 
+     </div>
+
+<button type="submit" name="upload" class="btn btn-primary" value="Upload Note">Upload Note</button>
+<br>
+<br>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+    
+
+   
+
+                </div>
+                 
+                
+                <!-- project team & activity end -->
+            </section>
+        </section>
+    <!--main content end-->
+        
+	</div>
+
+
+</body>
+</html>

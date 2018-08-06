@@ -1,0 +1,55 @@
+body{
+    background: url(stadium.jpeg);
+    background-size: cover;
+    margin: 0;
+}
+input {
+    width: 70%;
+    outline: none;
+    padding: 10px 41px;
+    border: 1px #aaa solid;
+    font-size: 15px;
+    background: #fff;
+    display: block;
+    margin: 20px auto;
+}
+#login{
+    background: #19b1ca;
+    color: #fff;
+    border: none;
+}
+#signup{
+    background: #19b1ca;
+    color: #fff;
+    border: none;
+}
+div{
+    width: 30%;
+    height: 400px;
+    background: rgba(0,0,0,.2);
+    box-shadow: 5px 4px 43px #000;
+    position: absolute;
+    top: 80px;
+    left: 200px;
+}
+form{
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 150px;
+}
+b{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 90px;
+}
+a{
+    color: #fff;
+    margin-right: 90px;
+}
+img{
+    display: block;
+    margin: -75px auto 0 auto;
+}
+
+
+
