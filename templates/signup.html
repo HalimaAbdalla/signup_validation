@@ -27,14 +27,14 @@
 </style>
 <body>
     <div>
-<form action="{{ url_for('index.html')}}" method="post">
+<form action="/signup_process" method="post">
         <img src="">
         <b>Register</b>
-        <input type="email" name="" value="" placeholder="Email" id="" />
-        <input type="unamw" name="" value="" placeholder="Username" id="" />
-        <input type="password" name="" value="" placeholder="Password" id="" />
-        <input type="password" name="" value="" placeholder="Confirm Password" id="" />
-        <input type="submit" name="" value="SIGN UP" placeholder="" id="signup" />
-        <a href="{{ url_for('index.html')}}" >Go to Login</a>
+        <input type="email" placeholder="Email"  required/>
+        <input type="uname" placeholder="Username" required/>
+        <input type="password" placeholder="Password"  required/>
+        <input type="password" placeholder="Confirm Password"  required/>
+        <input type="submit" name="" value="SIGN UP" placeholder="" id="signup" required/>
+        <a href="index.html" >Go to Login</a>
     </form>
 </div>
